@@ -3,5 +3,58 @@
 {% block title %}Home{% endblock title %}
 
 {% block body %}
-<h2>This is body</h2>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner container-fluid my-4" >
+    <div class="carousel-item active">
+      <img src="static/img/ice.jpg" class="d-block w-100 h-60" alt="..." style="height: 500px;" >
+      <div class="carousel-caption d-none d-md-block" style="backdrop-filter: blur(5px);">
+        <h3>Ice Creams</h3>
+        <h4>Organic and Authentic Flavours.</h4>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/img/gel.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+      <div class="carousel-caption d-none d-md-block" style="backdrop-filter: blur(5px);">
+        <h3>Gelato</h3>
+        <h4>Fresh and Creamy Italian Gelato</h4>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/img/popsicle.jfif" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block" style="backdrop-filter: blur(5px);">
+        <h3>Popsicle</h3>
+        <h4>COld Ice Popsicles in various flavours.</h4>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="https://www.logomaker.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfJ0arR7gw2y0vWpHw+O21fqQ1h439y2ul+9...sgXF9Vogkd301bf88...iyd7UYMWhAwgoWbMfN5OWnh5zy0NUe0PGmZ4LUuJUKPD6wk3yg==" alt="" width="72" height="57">
+    <h1 class="display-5 fw-bold">Polar Ice Creams</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Welcome to Polar Ice Creams. We have organic and authentic flavours. From Creamy Gelato to Cool Popsicles we have it all. Visit our outlet near you. Enjoyy delicious Ice Creams with friends , family and even on Ice-Cream Date.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-danger btn-lg px-4 gap-3">Our Products.</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Find Our Outlet</button>
+      </div>
+    </div>
+  </div>
+
+
 {% endblock body %}

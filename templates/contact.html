@@ -3,5 +3,37 @@
 {% block title %}Contact{% endblock title %}
 
 {% block body %}
-<h2>This is Contact ka body</h2>
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="static/img/ice.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <div>
+           
+        <form method="post" action="/contact">
+            {% csrf_token %}
+            <input type="hidden" name="csrfmiddlewaretoken" value="jTkA9KZ2vPtB1yfICFVZBenKw5r2CUZ4lvcJVbIfmxzU6vzDmHp6ikVv8ZaUk9Ob">
+            <div class="form-group mb-2">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name"  name="name" placeholder="Your Name">
+            </div>
+            <div class="form-group mb-2">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email"  name="email" placeholder="Name@email.com">
+            </div>
+            <div class="form-group mb-2">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="number" class="form-control" id="phone"  name="phone" placeholder="Your Phone Number">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="desc" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
+          </div>
+          <button class="btn btn-danger" type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+  </div>
 {% endblock body %}
