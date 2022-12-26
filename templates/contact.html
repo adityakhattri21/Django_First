@@ -11,8 +11,7 @@
       <div class="col-lg-6">
         <div>
            
-        <form method="post" action="/contact">
-            {% csrf_token %}
+        <form method="post" action="/contact"> {% csrf_token %}
             <input type="hidden" name="csrfmiddlewaretoken" value="jTkA9KZ2vPtB1yfICFVZBenKw5r2CUZ4lvcJVbIfmxzU6vzDmHp6ikVv8ZaUk9Ob">
             <div class="form-group mb-2">
                 <label for="name" class="form-label">Name</label>
